@@ -16,7 +16,7 @@ fun main() {
     println("       Hello! Welcome to KodeGo School Library       ")
     println("")
     println("  1) Check Books")
-    println("  2) Edit Books")
+    println("  2) Books Status")
     println("  3) End :<")
     println("")
     println("+---------------------------------------------------+")
@@ -42,7 +42,7 @@ fun main2() {
     println("       Hello! Welcome to KodeGo School Library       ")
     println("")
     println("  1) Check Books")
-    println("  2) Edit Books")
+    println("  2) Books Status")
     println("  3) End :<")
     println("")
     println("+---------------------------------------------------+")
@@ -616,7 +616,7 @@ fun menu() {
 fun edit() {
     println("")
     println("+---------------------------------------------------+")
-    println("          Select which book you wish to edit         ")
+    println("          Select which book you wish to check        ")
     println("")
     println("  1) The Nethergrim")
     println("  2) Redwall")
@@ -637,12 +637,536 @@ fun edit() {
 
     if (edit == "1") {
 
+        val book = "The Nethergrim"
+        val name = "Matthew Jobin"
+
+        println("")
+        println("+---------------------------------------------------+")
+        println("")
+        println("  $book")
+        println("  by $name")
+        println("")
+        println("  Copies available: $a")
+        println("")
+        println("  Note: Simply type \"1\" to register the book that has been returned\n" +
+                "  and \"2\" to cancel.")
+        val a1 = readln()
+
+        if (a1 == "1") {
+            if (a >= 3) {
+                println("  Please note that \"Someone's Library\" only have 3 copies of this book.\n" +
+                        "  Sorry but we cannot accept this.\n" +
+                        "\n" +
+                        "  Press ENTER to continue.")
+                val aa1 = readln()
+                if (aa1 == "") {
+                    edit()
+                }
+            } else {
+                a += 1
+                println(
+                    "  1 \"$book\" has been returned. Press ENTER to continue.\n" +
+                            "  If this is a mistake, type \"UNDO\" to undo the process."
+                )
+                val a2 = readln()
+                if (a2 == "") {
+                    edit()
+                } else if (a2 == "UNDO" && a2 == "undo") {
+                    a -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    }
+                }
+            }
+        } else if (a1 == "2") {
+            edit()
+        } else {
+            println("")
+            println("  (Wrong input. Please try again.)")
+            edit()
+        }
+
     } else if (edit == "2") {
+
+        val book = "Redwall"
+        val name = "Brian Jacques"
+
+        println("")
+        println("+---------------------------------------------------+")
+        println("")
+        println("  $book")
+        println("  by $name")
+        println("")
+        println("  Copies available: $b")
+        println("")
+        println("  Note: Simply type \"1\" to register the book that has been returned\n" +
+                "  and \"2\" to cancel.")
+        val a1 = readln()
+
+        if (a1 == "1") {
+            if (b >= 3) {
+                println("  Please note that \"Someone's Library\" only have 3 copies of this book.\n" +
+                        "  Sorry but we cannot accept this.\n" +
+                        "\n" +
+                        "  Press ENTER to continue.")
+                val aa1 = readln()
+                if (aa1 == "") {
+                    edit()
+                }
+            } else {
+                b += 1
+                println(
+                    "  1 \"$book\" has been returned. Press ENTER to continue.\n" +
+                            "  If this is a mistake, type \"UNDO\" to undo the process."
+                )
+                val a2 = readln()
+                if (a2 == "") {
+                    edit()
+                } else if (a2 == "UNDO" && a2 == "undo") {
+                    b -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    }
+                }
+            }
+        } else if (a1 == "2") {
+            edit()
+        } else {
+            println("")
+            println("  (Wrong input. Please try again.)")
+            edit()
+        }
 
     } else if (edit == "3") {
 
+        val book = "The Lord of The Rings"
+        val name = "J. R. R. Tolkien"
+
+        println("")
+        println("+---------------------------------------------------+")
+        println("")
+        println("  $book")
+        println("  by $name")
+        println("")
+        println("  Copies available: $c")
+        println("")
+        println("  Note: Simply type \"1\" to register the book that has been returned\n" +
+                "  and \"2\" to cancel.")
+        val a1 = readln()
+
+        if (a1 == "1") {
+            if (c >= 3) {
+                println("  Please note that \"Someone's Library\" only have 3 copies of this book.\n" +
+                        "  Sorry but we cannot accept this.\n" +
+                        "\n" +
+                        "  Press ENTER to continue.")
+                val aa1 = readln()
+                if (aa1 == "") {
+                    edit()
+                }
+            } else {
+                c += 1
+                println(
+                    "  1 \"$book\" has been returned. Press ENTER to continue.\n" +
+                            "  If this is a mistake, type \"UNDO\" to undo the process."
+                )
+                val a2 = readln()
+                if (a2 == "") {
+                    edit()
+                } else if (a2 == "UNDO" && a2 == "undo") {
+                    c -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    }
+                }
+            }
+        } else if (a1 == "2") {
+            edit()
+        } else {
+            println("")
+            println("  (Wrong input. Please try again.)")
+            edit()
+        }
+
+    } else if (edit == "4") {
+
+        val book = "The Chronicles of the Imaginarium Geographica"
+        val name = "James A. Owen"
+
+        println("")
+        println("+---------------------------------------------------+")
+        println("")
+        println("  $book")
+        println("  by $name")
+        println("")
+        println("  Copies available: $d")
+        println("")
+        println("  Note: Simply type \"1\" to register the book that has been returned\n" +
+                "  and \"2\" to cancel.")
+        val a1 = readln()
+
+        if (a1 == "1") {
+            if (d >= 3) {
+                println("  Please note that \"Someone's Library\" only have 3 copies of this book.\n" +
+                        "  Sorry but we cannot accept this.\n" +
+                        "\n" +
+                        "  Press ENTER to continue.")
+                val aa1 = readln()
+                if (aa1 == "") {
+                    edit()
+                }
+            } else {
+                d += 1
+                println(
+                    "  1 \"$book\" has been returned. Press ENTER to continue.\n" +
+                            "  If this is a mistake, type \"UNDO\" to undo the process."
+                )
+                val a2 = readln()
+                if (a2 == "") {
+                    edit()
+                } else if (a2 == "UNDO" && a2 == "undo") {
+                    d -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    }
+                }
+            }
+        } else if (a1 == "2") {
+            edit()
+        } else {
+            println("")
+            println("  (Wrong input. Please try again.)")
+            edit()
+        }
+
+    } else if (edit == "5") {
+
+        val book = "Harry Potter Series"
+        val name = "J. K. Rowling"
+
+        println("")
+        println("+---------------------------------------------------+")
+        println("")
+        println("  $book")
+        println("  by $name")
+        println("")
+        println("  Copies available: $e")
+        println("")
+        println("  Note: Simply type \"1\" to register the book that has been returned\n" +
+                "  and \"2\" to cancel.")
+        val a1 = readln()
+
+        if (a1 == "1") {
+            if (e >= 3) {
+                println("  Please note that \"Someone's Library\" only have 3 copies of this book.\n" +
+                        "  Sorry but we cannot accept this.\n" +
+                        "\n" +
+                        "  Press ENTER to continue.")
+                val aa1 = readln()
+                if (aa1 == "") {
+                    edit()
+                }
+            } else {
+                e += 1
+                println(
+                    "  1 \"$book\" has been returned. Press ENTER to continue.\n" +
+                            "  If this is a mistake, type \"UNDO\" to undo the process."
+                )
+                val a2 = readln()
+                if (a2 == "") {
+                    edit()
+                } else if (a2 == "UNDO" && a2 == "undo") {
+                    e -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    }
+                }
+            }
+        } else if (a1 == "2") {
+            edit()
+        } else {
+            println("")
+            println("  (Wrong input. Please try again.)")
+            edit()
+        }
+
+    } else if (edit == "6") {
+
+        val book = "And Then There Were None"
+        val name = "Agatha Christie"
+
+        println("")
+        println("+---------------------------------------------------+")
+        println("")
+        println("  $book")
+        println("  by $name")
+        println("")
+        println("  Copies available: $f")
+        println("")
+        println("  Note: Simply type \"1\" to register the book that has been returned\n" +
+                "  and \"2\" to cancel.")
+        val a1 = readln()
+
+        if (a1 == "1") {
+            if (f >= 3) {
+                println("  Please note that \"Someone's Library\" only have 3 copies of this book.\n" +
+                        "  Sorry but we cannot accept this.\n" +
+                        "\n" +
+                        "  Press ENTER to continue.")
+                val aa1 = readln()
+                if (aa1 == "") {
+                    edit()
+                }
+            } else {
+                f += 1
+                println(
+                    "  1 \"$book\" has been returned. Press ENTER to continue.\n" +
+                            "  If this is a mistake, type \"UNDO\" to undo the process."
+                )
+                val a2 = readln()
+                if (a2 == "") {
+                    edit()
+                } else if (a2 == "UNDO" && a2 == "undo") {
+                    f -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    }
+                }
+            }
+        } else if (a1 == "2") {
+            edit()
+        } else {
+            println("")
+            println("  (Wrong input. Please try again.)")
+            edit()
+        }
+
+    } else if (edit == "7") {
+
+        val book = "The Girl Who Drank the Moon"
+        val name = "Kelly Barnhill"
+
+        println("")
+        println("+---------------------------------------------------+")
+        println("")
+        println("  $book")
+        println("  by $name")
+        println("")
+        println("  Copies available: $g")
+        println("")
+        println("  Note: Simply type \"1\" to register the book that has been returned\n" +
+                "  and \"2\" to cancel.")
+        val a1 = readln()
+
+        if (a1 == "1") {
+            if (g >= 3) {
+                println("  Please note that \"Someone's Library\" only have 3 copies of this book.\n" +
+                        "  Sorry but we cannot accept this.\n" +
+                        "\n" +
+                        "  Press ENTER to continue.")
+                val aa1 = readln()
+                if (aa1 == "") {
+                    edit()
+                }
+            } else {
+                g += 1
+                println(
+                    "  1 \"$book\" has been returned. Press ENTER to continue.\n" +
+                            "  If this is a mistake, type \"UNDO\" to undo the process."
+                )
+                val a2 = readln()
+                if (a2 == "") {
+                    edit()
+                } else if (a2 == "UNDO" && a2 == "undo") {
+                    g -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    }
+                }
+            }
+        } else if (a1 == "2") {
+            edit()
+        } else {
+            println("")
+            println("  (Wrong input. Please try again.)")
+            edit()
+        }
+
+    } else if (edit == "8") {
+
+        val book = "The Hobbit"
+        val name = "J. R. R. Tolkien"
+
+        println("")
+        println("+---------------------------------------------------+")
+        println("")
+        println("  $book")
+        println("  by $name")
+        println("")
+        println("  Copies available: $h")
+        println("")
+        println("  Note: Simply type \"1\" to register the book that has been returned\n" +
+                "  and \"2\" to cancel.")
+        val a1 = readln()
+
+        if (a1 == "1") {
+            if (h >= 3) {
+                println("  Please note that \"Someone's Library\" only have 3 copies of this book.\n" +
+                        "  Sorry but we cannot accept this.\n" +
+                        "\n" +
+                        "  Press ENTER to continue.")
+                val aa1 = readln()
+                if (aa1 == "") {
+                    edit()
+                }
+            } else {
+                h += 1
+                println(
+                    "  1 \"$book\" has been returned. Press ENTER to continue.\n" +
+                            "  If this is a mistake, type \"UNDO\" to undo the process."
+                )
+                val a2 = readln()
+                if (a2 == "") {
+                    edit()
+                } else if (a2 == "UNDO" && a2 == "undo") {
+                    h -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    }
+                }
+            }
+        } else if (a1 == "2") {
+            edit()
+        } else {
+            println("")
+            println("  (Wrong input. Please try again.)")
+            edit()
+        }
+
+    } else if (edit == "9") {
+
+        val book = "The Da Vinci Code"
+        val name = "Dan Brown"
+
+        println("")
+        println("+---------------------------------------------------+")
+        println("")
+        println("  $book")
+        println("  by $name")
+        println("")
+        println("  Copies available: $i")
+        println("")
+        println("  Note: Simply type \"1\" to register the book that has been returned\n" +
+                "  and \"2\" to cancel.")
+        val a1 = readln()
+
+        if (a1 == "1") {
+            if (i >= 3) {
+                println("  Please note that \"Someone's Library\" only have 3 copies of this book.\n" +
+                        "  Sorry but we cannot accept this.\n" +
+                        "\n" +
+                        "  Press ENTER to continue.")
+                val aa1 = readln()
+                if (aa1 == "") {
+                    edit()
+                }
+            } else {
+                i += 1
+                println(
+                    "  1 \"$book\" has been returned. Press ENTER to continue.\n" +
+                            "  If this is a mistake, type \"UNDO\" to undo the process."
+                )
+                val a2 = readln()
+                if (a2 == "") {
+                    edit()
+                } else if (a2 == "UNDO" && a2 == "undo") {
+                    i -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    }
+                }
+            }
+        } else if (a1 == "2") {
+            edit()
+        } else {
+            println("")
+            println("  (Wrong input. Please try again.)")
+            edit()
+        }
+
+    } else if (edit == "0") {
+
+        val book = "Merlin Saga"
+        val name = "T. A. Barron"
+
+        println("")
+        println("+---------------------------------------------------+")
+        println("")
+        println("  $book")
+        println("  by $name")
+        println("")
+        println("  Copies available: $j")
+        println("")
+        println("  Note: Simply type \"1\" to register the book that has been returned\n" +
+                "  and \"2\" to cancel.")
+        val a1 = readln()
+
+        if (a1 == "1") {
+            if (j >= 3) {
+                println("  Please note that \"Someone's Library\" only have 3 copies of this book.\n" +
+                        "  Sorry but we cannot accept this.\n" +
+                        "\n" +
+                        "  Press ENTER to continue.")
+                val aa1 = readln()
+                if (aa1 == "") {
+                    edit()
+                }
+            } else {
+                j += 1
+                println(
+                    "  1 \"$book\" has been returned. Press ENTER to continue.\n" +
+                            "  If this is a mistake, type \"UNDO\" to undo the process."
+                )
+                val a2 = readln()
+                if (a2 == "") {
+                    edit()
+                } else if (a2 == "UNDO" && a2 == "undo") {
+                    j -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    }
+                }
+            }
+        } else if (a1 == "2") {
+            edit()
+        } else {
+            println("")
+            println("  (Wrong input. Please try again.)")
+            edit()
+        }
+
     } else if (edit == "a") {
-        menu()
+        main2()
     } else {
         println("  (Wrong input. Please try again.)")
         println("")
