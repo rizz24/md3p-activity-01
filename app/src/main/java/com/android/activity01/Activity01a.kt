@@ -362,7 +362,7 @@ fun edit() {
         } else if (aa1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -423,7 +423,7 @@ fun edit() {
         } else if (aa1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -484,7 +484,7 @@ fun edit() {
         } else if (aa1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -545,7 +545,7 @@ fun edit() {
         } else if (aa1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -606,7 +606,7 @@ fun edit() {
         } else if (aa1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -667,7 +667,7 @@ fun edit() {
         } else if (aa1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -728,7 +728,7 @@ fun edit() {
         } else if (aa1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -789,7 +789,7 @@ fun edit() {
         } else if (aa1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -885,7 +885,7 @@ fun edit2() {
         } else if (a1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -909,7 +909,7 @@ fun edit2() {
             println("")
             edit2()
         }
-git
+
     } else if (menu == "2") {
 
         println("")
@@ -938,7 +938,7 @@ git
         } else if (a1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -990,9 +990,8 @@ git
 
         } else if (a1 == "2") {
             println("")
-            println(
-                "  Please type the number of days. (NUMBER only)\n" +
-                        "Type \"n/N\" to cancel."
+            println("  Please type the number of days. (NUMBER only)\n" +
+                    "  Type \"n/N\" to cancel."
             )
             var num = readln()
 
@@ -1046,7 +1045,7 @@ git
         } else if (a1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -1099,7 +1098,7 @@ git
         } else if (a1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -1152,7 +1151,7 @@ git
         } else if (a1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -1205,7 +1204,7 @@ git
         } else if (a1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
@@ -1258,7 +1257,7 @@ git
         } else if (a1 == "2") {
             println("")
             println("  Please type the number of days. (NUMBER only)\n" +
-                    "Type \"n/N\" to cancel.")
+                    "  Type \"n/N\" to cancel.")
             var num = readln()
 
             var num2 = num
