@@ -21,18 +21,22 @@ fun main() {
     println("")
     println("+---------------------------------------------------+")
     print("  Please select an option: ")
-    val menu = readln()
 
-    if (menu == "1") {
-        menu()
-    } else if (menu == "2") {
-        edit()
-    } else if (menu == "3") {
-        end()
-    } else {
-        println("  (Wrong input. Please try again.)")
-        println("")
-        main()
+    when (readln()) {
+        "1" -> {
+            menu()
+        }
+        "2" -> {
+            edit()
+        }
+        "3" -> {
+            end()
+        }
+        else -> {
+            println("  (Wrong input. Please try again.)")
+            println("")
+            main()
+        }
     }
 }
 
@@ -47,18 +51,22 @@ fun main2() {
     println("")
     println("+---------------------------------------------------+")
     print("  Please select an option: ")
-    val menu = readln()
 
-    if (menu == "1") {
-        menu()
-    } else if (menu == "2") {
-        edit()
-    } else if (menu == "3") {
-        end()
-    } else {
-        println("  (Wrong input. Please try again.)")
-        println("")
-        main()
+    when (readln()) {
+        "1" -> {
+            menu()
+        }
+        "2" -> {
+            edit()
+        }
+        "3" -> {
+            end()
+        }
+        else -> {
+            println("  (Wrong input. Please try again.)")
+            println("")
+            main()
+        }
     }
 }
 
