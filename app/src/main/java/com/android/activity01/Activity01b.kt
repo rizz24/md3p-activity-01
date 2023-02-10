@@ -312,7 +312,7 @@ fun menu() {
         println("  $book")
         println("  by $name")
         println("")
-        println("  a lonely orphan who discovers that he is actually a wizard and enrolls in the\n" +
+        println("  A lonely orphan who discovers that he is actually a wizard and enrolls in the\n" +
                 "  Hogwarts School of Witchcraft and Wizardry.")
         println("")
         println("  Copies available: $e")
@@ -679,11 +679,22 @@ fun edit() {
                 val a2 = readln()
                 if (a2 == "") {
                     edit()
-                } else if (a2 == "UNDO" && a2 == "undo") {
+                } else if (a2 == "UNDO") {
                     a -= 1
                     println("  You choose Undo. Press ENTER to continue.")
                     val a3 = readln()
                     if (a3 == "") {
+                        edit()
+                    } else {
+                        edit()
+                    }
+                } else if (a2 == "undo") {
+                    a -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    } else {
                         edit()
                     }
                 }
@@ -732,11 +743,22 @@ fun edit() {
                 val a2 = readln()
                 if (a2 == "") {
                     edit()
-                } else if (a2 == "UNDO" && a2 == "undo") {
-                    b -= 1
+                } else if (a2 == "UNDO") {
+                    a -= 1
                     println("  You choose Undo. Press ENTER to continue.")
                     val a3 = readln()
                     if (a3 == "") {
+                        edit()
+                    } else {
+                        edit()
+                    }
+                } else if (a2 == "undo") {
+                    a -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    } else {
                         edit()
                     }
                 }
@@ -785,11 +807,22 @@ fun edit() {
                 val a2 = readln()
                 if (a2 == "") {
                     edit()
-                } else if (a2 == "UNDO" && a2 == "undo") {
-                    c -= 1
+                } else if (a2 == "UNDO") {
+                    a -= 1
                     println("  You choose Undo. Press ENTER to continue.")
                     val a3 = readln()
                     if (a3 == "") {
+                        edit()
+                    } else {
+                        edit()
+                    }
+                } else if (a2 == "undo") {
+                    a -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    } else {
                         edit()
                     }
                 }
@@ -838,11 +871,22 @@ fun edit() {
                 val a2 = readln()
                 if (a2 == "") {
                     edit()
-                } else if (a2 == "UNDO" && a2 == "undo") {
-                    d -= 1
+                } else if (a2 == "UNDO") {
+                    a -= 1
                     println("  You choose Undo. Press ENTER to continue.")
                     val a3 = readln()
                     if (a3 == "") {
+                        edit()
+                    } else {
+                        edit()
+                    }
+                } else if (a2 == "undo") {
+                    a -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    } else {
                         edit()
                     }
                 }
@@ -891,11 +935,22 @@ fun edit() {
                 val a2 = readln()
                 if (a2 == "") {
                     edit()
-                } else if (a2 == "UNDO" && a2 == "undo") {
-                    e -= 1
+                } else if (a2 == "UNDO") {
+                    a -= 1
                     println("  You choose Undo. Press ENTER to continue.")
                     val a3 = readln()
                     if (a3 == "") {
+                        edit()
+                    } else {
+                        edit()
+                    }
+                } else if (a2 == "undo") {
+                    a -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    } else {
                         edit()
                     }
                 }
@@ -944,11 +999,22 @@ fun edit() {
                 val a2 = readln()
                 if (a2 == "") {
                     edit()
-                } else if (a2 == "UNDO" && a2 == "undo") {
-                    f -= 1
+                } else if (a2 == "UNDO") {
+                    a -= 1
                     println("  You choose Undo. Press ENTER to continue.")
                     val a3 = readln()
                     if (a3 == "") {
+                        edit()
+                    } else {
+                        edit()
+                    }
+                } else if (a2 == "undo") {
+                    a -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    } else {
                         edit()
                     }
                 }
@@ -997,11 +1063,22 @@ fun edit() {
                 val a2 = readln()
                 if (a2 == "") {
                     edit()
-                } else if (a2 == "UNDO" && a2 == "undo") {
-                    g -= 1
+                } else if (a2 == "UNDO") {
+                    a -= 1
                     println("  You choose Undo. Press ENTER to continue.")
                     val a3 = readln()
                     if (a3 == "") {
+                        edit()
+                    } else {
+                        edit()
+                    }
+                } else if (a2 == "undo") {
+                    a -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    } else {
                         edit()
                     }
                 }
@@ -1050,11 +1127,22 @@ fun edit() {
                 val a2 = readln()
                 if (a2 == "") {
                     edit()
-                } else if (a2 == "UNDO" && a2 == "undo") {
-                    h -= 1
+                } else if (a2 == "UNDO") {
+                    a -= 1
                     println("  You choose Undo. Press ENTER to continue.")
                     val a3 = readln()
                     if (a3 == "") {
+                        edit()
+                    } else {
+                        edit()
+                    }
+                } else if (a2 == "undo") {
+                    a -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    } else {
                         edit()
                     }
                 }
@@ -1103,11 +1191,22 @@ fun edit() {
                 val a2 = readln()
                 if (a2 == "") {
                     edit()
-                } else if (a2 == "UNDO" && a2 == "undo") {
-                    i -= 1
+                } else if (a2 == "UNDO") {
+                    a -= 1
                     println("  You choose Undo. Press ENTER to continue.")
                     val a3 = readln()
                     if (a3 == "") {
+                        edit()
+                    } else {
+                        edit()
+                    }
+                } else if (a2 == "undo") {
+                    a -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    } else {
                         edit()
                     }
                 }
@@ -1156,11 +1255,22 @@ fun edit() {
                 val a2 = readln()
                 if (a2 == "") {
                     edit()
-                } else if (a2 == "UNDO" && a2 == "undo") {
-                    j -= 1
+                } else if (a2 == "UNDO") {
+                    a -= 1
                     println("  You choose Undo. Press ENTER to continue.")
                     val a3 = readln()
                     if (a3 == "") {
+                        edit()
+                    } else {
+                        edit()
+                    }
+                } else if (a2 == "undo") {
+                    a -= 1
+                    println("  You choose Undo. Press ENTER to continue.")
+                    val a3 = readln()
+                    if (a3 == "") {
+                        edit()
+                    } else {
                         edit()
                     }
                 }
