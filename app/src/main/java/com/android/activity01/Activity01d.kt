@@ -13,11 +13,11 @@ fun main() {
     println("+---------------------------------------------------+")
     println("  Hello! Please note that we 'only' accept numbers.\n" +
                 "  And not any other characters :>")
-    println()
     firstA()
 }
 
 fun firstA() {
+    println()
     print("  Type your first amount: $")
 
     try {
