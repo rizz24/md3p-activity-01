@@ -91,29 +91,13 @@ fun check() {
     println("  Fourth Amount: $$d")
     println("  Fifth Amount: $$e")
     println()
-    println("  Are these inputs correct? If yes, press 'ENTER' to continue.\n" +
-            "  If not, type 'reset' to start again.")
-    val res = readln()
-
-    if (res == "") {
-        divide()
-    } else if (res == "reset") {
-        println()
-        firstA()
-    } else {
-        println("  Wrong input! Try again.")
-        check()
-    }
-}
-
-fun divide() {
-    print("  Divide all value by how many? ")
+    print("  Divide inputs by how many? ")
 
     try {
         f = readln().toInt()
     } catch (exception:NumberFormatException) {
         println("  Input error. Make sure to put 'numbers' only.")
-        divide()
+        check()
     }
 
     added = (a + b + c + d + e).toDouble()
